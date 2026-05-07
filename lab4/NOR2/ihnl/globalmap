@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+lab3/NOR2/schematic NOR2
+$endmodel
+$net
+$endnet
+$param
+$endparam

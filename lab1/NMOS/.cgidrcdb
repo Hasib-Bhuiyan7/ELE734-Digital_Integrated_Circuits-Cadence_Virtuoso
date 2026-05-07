@@ -1,0 +1,21 @@
+//  Runset file generated on Thu Nov 6 23:24:37 2025
+//  by Calibre Interactive v2024.3_37.19    Tue Sep 3 16:13:30 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+drc.rulesFile.value = "/CMC/kits/cmosp18.6.13a_ic6/Calibre/drc/calibre.drc"
+drc.runDir.value = "/home/student2/ahbhuiya/ele734-Labs/lab2/INVERTER"
+drc.layout.layoutFile.value = "INVERTER.calibre.db"
+cmn.layout.defFiles.value = [ "INVERTER.def" ]
+drc.layout.topCellLibrary.value = "lab2"
+cmn.layout.topCellLibraryFDI.value = "lab2"
+drc.layout.topCell.value = "INVERTER"
+drc.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+drc.drcdb.resultsFile.value = "INVERTER.drc.results"
+drc.reports.drcSummaryReport.value = "INVERTER.drc.summary"
+drc.rhdb.fileName.value = "INVERTER.rhdb"
+drc.dfmDefaults.resultsFile.value = "INVERTER.dfmDefaults.db"
+

@@ -1,0 +1,25 @@
+//
+//  Rule file generated on Tue Dec 2 01:00:14 2025
+//  by Calibre Interactive v2024.3_37.19    Tue Sep 3 16:13:30 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "FA.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "FA"
+
+PEX NETLIST "FA.pex.netlist" CALIBREVIEW LAYOUTNAMES
+
+MASK SVDB DIRECTORY "svdb" QUERY XRC
+
+LVS REPORT "FA.lvs.report"
+
+LAYOUT CASE YES
+
+SOURCE CASE YES
+
+DRC ICSTATION YES
+
+INCLUDE "/home/student2/ahbhuiya/ele734-Labs/rcx/calibre.rcx"

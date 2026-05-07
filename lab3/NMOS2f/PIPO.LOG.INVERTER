@@ -1,0 +1,62 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 08/09/2022 19:14 (cpgsrv11) $
+          : sub-version  IC6.1.8-64b.500.27 
+Started at: 06-Nov-2025  01:43:04
+User Name : ahbhuiya
+Host Name : cmp31.ee.ryerson.ca
+Directory : /home/student2/ahbhuiya/ele734-Labs
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/home/student2/ahbhuiya/ele734-Labs/lab2/NMOS/INVERTER.calibre.db' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /CMC/kits/cmosp18.6.13a_ic6/tsmc18/tsmc18.layermap
+INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options :
+library                                 lab2
+strmFile                                /home/student2/ahbhuiya/ele734-Labs/lab2/NMOS/INVERTER.calibre.db
+topCell                                 INVERTER
+view                                    layout
+runDir                                  /home/student2/ahbhuiya/ele734-Labs/lab2/NMOS/
+logFile                                 PIPO.LOG.INVERTER
+summaryFile                             PIPO.SUM.INVERTER
+layerMap                                /CMC/kits/cmosp18.6.13a_ic6/tsmc18/tsmc18.layermap
+case                                    Preserve
+convertDot                              node
+convertPcellPin                         geometry
+
+INFO (XSTRM-223): 1. Translating stdVia tsmc18/M1_POLY1/layout as STRUCTURE M1_POLY1_CDNS_762411384370.
+INFO (XSTRM-223): 2. Translating cellView lab2/NMOS/layout as STRUCTURE NMOS.
+INFO (XSTRM-223): 3. Translating cellView lab2/PMOS/layout as STRUCTURE PMOS.
+INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
+INFO (XSTRM-223): 4. Translating cellView lab2/INVERTER/layout as STRUCTURE INVERTER.
+
+Summary of Objects Translated:
+	Scalar Instances:                       2
+	Array Instances:                        0
+	Polygons:                               0
+	Paths:                                  6
+	Rectangles:                             44
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           1
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               2
+	Text:                                   0
+	TextDisplay:                            4
+	Cells:                                  4
+
+Elapsed Time: 0.6s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 21992KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

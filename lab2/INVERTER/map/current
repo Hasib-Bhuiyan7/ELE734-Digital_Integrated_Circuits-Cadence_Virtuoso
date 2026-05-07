@@ -1,0 +1,14 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "INVERTER"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  hierDelim "."
+  netlistDir "/home/student2/ahbhuiya/ele734-Labs/lab2/INVERTER"
+ )
+( model
+( "lab2/INVERTER/schematic" "INVERTER" )
+ )
+( "INVERTER" "ihnl/cds0/map" )
+ )

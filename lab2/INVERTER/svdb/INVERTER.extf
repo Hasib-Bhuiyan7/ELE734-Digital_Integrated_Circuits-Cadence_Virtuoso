@@ -1,0 +1,10 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1762731300 1762731303
+lvs_ExtOutFile RUNDIR /home/student2/ahbhuiya/ele734-Labs/lab2/INVERTER
+lvs_ExtOutFile RULES_FILE _calibre.rcx_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST svdb/INVERTER.sp
+lvs_ExtOutFile EXTRACTION_REPORT INVERTER.lvs.report.ext
+lvs_ExtOutFile LAYOUT_PDSP {  svdb/INVERTER.pdsp }

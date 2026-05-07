@@ -1,0 +1,30 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab2
+* Top Cell Name: INVERTER
+* View Name:     schematic
+* Netlisted on:  Nov  9 01:31:02 2025
+************************************************************************
+
+.INCLUDE  /CMC/kits/cmosp18.6.13a_ic6/tsmc18/../Calibre/lvs/source.added
+*.EQUATION
+*.LDD
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab2
+* Cell Name:    INVERTER
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT INVERTER IN OUT VDD VSS
+*.PININFO IN:I OUT:O VDD:B VSS:B
+MM0 OUT IN VSS VSS N l=180e-9 w=1e-6 m=1
+MM1 OUT IN VDD VDD P l=180e-9 w=4e-6 m=1
+.ENDS
+

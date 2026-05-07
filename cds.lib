@@ -1,0 +1,17 @@
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic 
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE tsmc18 ./tsmc18
+
+DEFINE US_10ths /CMC/tools/cadence/IC06.18.120_lnx86/tools/dfII/samples/cdslib/sheets/US_10ths
+DEFINE rfLib /CMC/tools/cadence/IC06.18.120_lnx86/tools/dfII/samples/artist/rfLib
+DEFINE pllMMLib /CMC/tools/cadence/IC06.18.120_lnx86/tools/dfII/samples/artist/pllMMLib
+DEFINE pllLib /CMC/tools/cadence/IC06.18.120_lnx86/tools/dfII/samples/artist/pllLib
+DEFINE bmslib /CMC/tools/cadence/IC06.18.120_lnx86/tools/dfII/samples/artist/bmslib
+DEFINE aExamples /CMC/tools/cadence/IC06.18.120_lnx86/tools/dfII/samples/artist/aExamples
+DEFINE functional /CMC/tools/cadence/IC06.18.120_lnx86/tools/dfII/etc/cdslib/artist/functional
+DEFINE lab1 /home/student2/ahbhuiya/ele734-Labs/lab1
+DEFINE avTech /CMC/tools/cadence/ASSURA04.16.110-618_lnx86/tools.lnx86/assura/etc/avtech/avTech
+DEFINE lab2 /home/student2/ahbhuiya/ele734-Labs/lab2
+#Removed by ddDeleteObj: DEFINE lab2#2dTest /home/student2/ahbhuiya/ele734-Labs/lab2#2dTest
+DEFINE lab3 /home/student2/ahbhuiya/ele734-Labs/lab3
+DEFINE lab4 /home/student2/ahbhuiya/ele734-Labs/lab4

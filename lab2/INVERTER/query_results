@@ -1,0 +1,6 @@
+mgc_rve_context_lcv "lab2" "INVERTER" "layout" 1000
+mgc_rve_highlight_index 0 "M1" "#EEEEEEEEFFFF"
+mgc_rve_property "w" 4e-06  "l" 1.8e-07  "model" "P"
+mgc_rve_layer "pgate"
+mr 0.71 6.3 0.89 10.3
+mgc_rve_zoom 0.672 5.443 0.928 11.157 1

@@ -1,0 +1,21 @@
+//  Runset file generated on Tue Oct 14 15:06:41 2025
+//  by Calibre Interactive v2024.3_37.19    Tue Sep 3 16:13:30 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+drc.rulesFile.value = "/CMC/kits/cmosp18.6.13a_ic6/Calibre/drc/calibre.drc"
+drc.runDir.value = "/home/student2/ahbhuiya/ele734-Labs/lab1"
+drc.layout.layoutFile.value = "pmos.calibre.db"
+cmn.layout.defFiles.value = [ "pmos.def" ]
+drc.layout.topCellLibrary.value = "lab1"
+cmn.layout.topCellLibraryFDI.value = "lab1"
+drc.layout.topCell.value = "pmos"
+drc.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+drc.drcdb.resultsFile.value = "pmos.drc.results"
+drc.reports.drcSummaryReport.value = "pmos.drc.summary"
+drc.rhdb.fileName.value = "pmos.rhdb"
+drc.dfmDefaults.resultsFile.value = "pmos.dfmDefaults.db"
+

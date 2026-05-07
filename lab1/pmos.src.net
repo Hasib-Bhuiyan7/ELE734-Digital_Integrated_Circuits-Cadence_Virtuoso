@@ -1,0 +1,29 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab1
+* Top Cell Name: pmos
+* View Name:     schematic
+* Netlisted on:  Oct 14 15:09:41 2025
+************************************************************************
+
+.INCLUDE  /CMC/kits/cmosp18.6.13a_ic6/tsmc18/../Calibre/lvs/source.added
+*.EQUATION
+*.LDD
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab1
+* Cell Name:    pmos
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT pmos B D G S
+*.PININFO B:B D:B G:B S:B
+Mpmos2 D G S B P l=180.0n w=1u m=1
+.ENDS
+

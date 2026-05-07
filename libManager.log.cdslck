@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ahbhuiya
+HostName                       cmp09.ee.ryerson.ca
+ProcessIdentifier              101292
+ProcessCreationTime_UTC        1764538233
+ProcessCreationTime_Readable   Sun Nov 30 16:30:33 2025 EST
+AppIdentifier                  /CMC/tools/cadence/IC06.18.270_lnx86/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /home/student2/ahbhuiya/ele734-Labs/libManager.log
+TimeEditLocked                 Sun Nov 30 16:30:33 2025 EST

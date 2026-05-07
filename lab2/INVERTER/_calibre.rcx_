@@ -1,0 +1,21 @@
+//
+//  Rule file generated on Sun Nov 9 18:34:58 2025
+//  by Calibre Interactive v2024.3_37.19    Tue Sep 3 16:13:30 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "INVERTER.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "INVERTER"
+
+PEX NETLIST "INVERTER.pex.netlist" CALIBREVIEW LAYOUTNAMES
+
+MASK SVDB DIRECTORY "svdb" QUERY XRC
+
+LVS REPORT "INVERTER.lvs.report"
+
+DRC ICSTATION YES
+
+INCLUDE "/home/student2/ahbhuiya/ele734-Labs/rcx/calibre.rcx"

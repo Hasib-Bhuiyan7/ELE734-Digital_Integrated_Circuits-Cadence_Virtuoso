@@ -1,0 +1,58 @@
+INFO: cds.lib has been converted to lib.defs /tmp/187304_result_lib.defs
+RUNNING PEX back-annotation...
+//  Calibre FDI  v2024.3_37.19 Tue Sep 3 16:01:15 PDT 2024
+//
+//                  Copyright Mentor Graphics Corporation 2008-2024
+//                             All Rights Reserved.
+//         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//             WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//               OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//  64 bit virtual addressing enabled
+//
+//  Running on Linux cmp13.ee.ryerson.ca 4.18.0-553.51.1.el8_10.x86_64 #1 SMP Wed Apr 30 04:00:07 EDT 2025 x86_64
+//  OS: Red Hat Enterprise Linux Server release 8.10 (Cerulean Leopard)[4.18.0-553.51.1.el8_10.x86_64]
+//
+//  Entries in /proc/meminfo:
+//
+//  MemTotal:       16044792 kB
+//  MemFree:        11462636 kB
+//  Cached:          2572964 kB
+//  SwapCached:            0 kB
+//  Dirty:               136 kB
+//  Writeback:             8 kB
+//
+//  Processor : Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz
+//  CPU Info: Cores = 4
+//  Process ID: 187304
+//  Starting time: Tue Dec  2 01:01:01 2025
+INFO: Parsing command line arguments...
+INFO: License checked out successfully for calibreqdb.
+INFO: Parsing cellmap file...
+INFO: Executing back annotation...
+INFO: Creating new view: calibre in library: lab4 cell: FA.
+WARNING: [FDI3033] Schematic instance M0 not found.
+WARNING: [FDI3033] Schematic instance M1 not found.
+WARNING: [FDI3033] Schematic instance M2 not found.
+WARNING: [FDI3033] Schematic instance M3 not found.
+WARNING: [FDI3033] Schematic instance M4 not found.
+WARNING: [FDI3033] Schematic instance M5 not found.
+WARNING: [FDI3033] Schematic instance M6 not found.
+WARNING: [FDI3033] Schematic instance M7 not found.
+WARNING: [FDI3033] Schematic instance M8 not found.
+WARNING: [FDI3033] Schematic instance M9 not found.
+WARNING: [FDI3033] Schematic instance M10 not found.
+WARNING: [FDI3033] Schematic instance M11 not found.
+WARNING: [FDI3033] Schematic instance M12 not found.
+WARNING: [FDI3033] Schematic instance M13 not found.
+WARNING: [FDI3033] Schematic instance M14 not found.
+WARNING: [FDI3033] Schematic instance M15 not found.
+WARNING: [FDI3033] Schematic instance M16 not found.
+WARNING: [FDI3033] Schematic instance M17 not found.
+WARNING: [FDI3033] Schematic instance M18 not found.
+WARNING: [FDI3033] Schematic instance M19 not found.
+INFO: Additional warning messages have been filtered. Use the FDI_DBDIFF_SUPPRESS_VALUES environment variable to customize global or individual message output.
+INFO: Back annotation is completed.
+Calibre View generation completed with 20 WARNINGs and 0 ERRORs.
+Please consult the CIW transcript for messages.

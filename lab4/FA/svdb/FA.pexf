@@ -1,0 +1,5 @@
+# Automagically generated file: Please do not edit!
+pex_PexParam RUNDIR /home/student2/ahbhuiya/ele734-Labs/lab4/FA
+pex_PexParam LAYOUT_PRIMARY FA
+pex_PexParam TOOL xRC
+pex_PexParam CORNER_PDBS { {FA "" FA.pdb "" } } 

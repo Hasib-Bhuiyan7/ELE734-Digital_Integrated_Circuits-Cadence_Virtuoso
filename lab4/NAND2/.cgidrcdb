@@ -1,0 +1,26 @@
+//  Runset file generated on Wed Nov 19 18:20:54 2025
+//  by Calibre Interactive v2024.3_37.19    Tue Sep 3 16:13:30 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+drc.rulesFile.value = "/CMC/kits/cmosp18.6.13a_ic6/Calibre/drc/calibre.drc"
+drc.runDir.value = "/home/student2/ahbhuiya/ele734-Labs/lab3/NOR2"
+drc.recipeEditor.setUserRecipes("<user_recipes>$$  <recipe>$$    <name>Checks selected in the rules file (Modified)</name>$$    <operations>$$      <group_select>rule_file</group_select>$$      <group_unselect>density</group_unselect>$$    </operations>$$  </recipe>$$</user_recipes>$$")
+drc.recipeEditor.setActiveRecipe("Checks selected in the rules file (Modified)")
+
+drc.layout.layoutFile.value = "NOR2.calibre.db"
+cmn.layout.defFiles.value = [ "NOR2.def" ]
+drc.layout.topCellLibrary.value = "lab3"
+cmn.layout.topCellLibraryFDI.value = "lab3"
+drc.layout.topCell.value = "NOR2"
+drc.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+drc.drcdb.resultsFile.value = "NOR2.drc.results"
+drc.reports.drcSummaryReport.value = "NOR2.drc.summary"
+drc.rhdb.fileName.value = "NOR2.rhdb"
+drc.dfmDefaults.resultsFile.value = "NOR2.dfmDefaults.db"
+
+cmn.licenseTimeout.specified = true
+cmn.licenseTimeout.timeout.value = 0.25

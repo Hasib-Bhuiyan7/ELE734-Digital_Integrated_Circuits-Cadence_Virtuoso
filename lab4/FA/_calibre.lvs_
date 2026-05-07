@@ -1,0 +1,28 @@
+//
+//  Rule file generated on Tue Dec 2 00:23:39 2025
+//  by Calibre Interactive v2024.3_37.19    Tue Sep 3 16:13:30 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "FA.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "FA"
+
+SOURCE PATH "FA.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "FA"
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "FA.lvs.report"
+
+LVS EXECUTE ERC YES
+
+ERC RESULTS DATABASE "FA.erc.results"
+ERC CELL NAME YES CELL SPACE XFORM
+
+DRC ICSTATION YES
+
+INCLUDE "/CMC/kits/cmosp18.6.13a_ic6/Calibre/lvs/calibre.lvs"

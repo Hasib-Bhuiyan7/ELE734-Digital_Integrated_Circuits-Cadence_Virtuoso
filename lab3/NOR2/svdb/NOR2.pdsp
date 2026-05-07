@@ -1,0 +1,184 @@
+* Calibre pushdown separate-properties (back-annotation) data
+***************************************
+*
+* These lvs-actionable properties, indexed by DEVICE element(model) will be kept in the netlist:
+*
+* KEEP_PROP_BEGIN
+* KEEP_PROP D(D1) A
+* KEEP_PROP D(D2) A
+* KEEP_PROP D(D3) A
+* KEEP_PROP D(DB) A
+* KEEP_PROP D(DC) A
+* KEEP_PROP D(DN) A
+* KEEP_PROP D(DP) A
+* KEEP_PROP D(dpwnbl_dio) A
+* KEEP_PROP D(dpwnbl_dio_60) A
+* KEEP_PROP D(DW) A
+* KEEP_PROP D(DY) A
+* KEEP_PROP D(DZ) A
+* KEEP_PROP D(hvnwdio_hv) A
+* KEEP_PROP D(hvnwdnwpsubhvpw_dio) A
+* KEEP_PROP D(hvnwpsub_dio) A
+* KEEP_PROP D(hvpwdio_hv) A
+* KEEP_PROP D(hvpwhvnwnbl_dio) A
+* KEEP_PROP D(hvpwhvnwnbl_dio_60) A
+* KEEP_PROP D(ldpwhvnw_dio) A
+* KEEP_PROP D(lvpwdio_hv) A
+* KEEP_PROP D(nbldio_hv) A
+* KEEP_PROP D(nblpepi_dio) A
+* KEEP_PROP D(nblpepi_dio_60) A
+* KEEP_PROP D(nddhvpw_dio) A
+* KEEP_PROP D(ndio_3m) A
+* KEEP_PROP D(ndio_ell) A
+* KEEP_PROP D(ndio_hv) A
+* KEEP_PROP D(ndio_m) A
+* KEEP_PROP D(ndio_ull) A
+* KEEP_PROP D(nhvpw_dio) A
+* KEEP_PROP D(nhvpw_dio_60) A
+* KEEP_PROP D(npdd_dio) A
+* KEEP_PROP D(nwdio_bg_cis) A
+* KEEP_PROP D(nwdio_ell) A
+* KEEP_PROP D(nwdio_ull) A
+* KEEP_PROP D(pddhvnw_dio) A
+* KEEP_PROP D(pdio_ell) A
+* KEEP_PROP D(pdio_hv) A
+* KEEP_PROP D(pdio_m) A
+* KEEP_PROP D(pdio_ull) A
+* KEEP_PROP D(phvnw_dio) A
+* KEEP_PROP D(phvnw_dio_60) A
+* KEEP_PROP D(pindio_cis) A
+* KEEP_PROP D(pwhvnw_dio) A
+* KEEP_PROP D(pwhvnw_dio_60) A
+* KEEP_PROP D(zd_dio) A
+* KEEP_PROP D(zd_dio_60) A
+* KEEP_PROP R(LR) R
+* KEEP_PROP R(M1) R
+* KEEP_PROP R(M2) R
+* KEEP_PROP R(M3) R
+* KEEP_PROP R(M4) R
+* KEEP_PROP R(M5) R
+* KEEP_PROP R(MT) R
+* KEEP_PROP R(ND) R
+* KEEP_PROP R(NI) R
+* KEEP_PROP R(NR) R
+* KEEP_PROP R(NS) R
+* KEEP_PROP R(nvmrpodrpo) R
+* KEEP_PROP R(PD) R
+* KEEP_PROP R(PI) R
+* KEEP_PROP R(PR) R
+* KEEP_PROP R(PS) R
+* KEEP_PROP R(WO) R
+* KEEP_PROP R(WR) R
+* KEEP_PROP cfmom nr stm spm s w lr
+* KEEP_PROP cfmom_mx nr stm spm s w lr
+* KEEP_PROP cfmom_rf nr stm spm s w lr
+* KEEP_PROP crtmom nv nh stm spm s w
+* KEEP_PROP crtmom_rf nv nh stm spm s w
+* KEEP_PROP lowcpad_rf lt wt lay
+* KEEP_PROP mimcap_1p0_sin lt wt
+* KEEP_PROP mimcap_1p0_sin_3t lt wt lay
+* KEEP_PROP mimcap_1p0_sin_hl lt wt
+* KEEP_PROP mimcap_1p0_sin_hl_3t lt wt lay
+* KEEP_PROP mimcap_1p5_sin lt wt
+* KEEP_PROP mimcap_1p5_sin_3t lt wt lay
+* KEEP_PROP mimcap_2p0_shield LT WT LAY
+* KEEP_PROP mimcap_2p0_sin lt wt
+* KEEP_PROP mimcap_2p0_sin_3ds lt wt
+* KEEP_PROP mimcap_2p0_sin_3ds_3t lt wt lay
+* KEEP_PROP mimcap_2p0_sin_3t lt wt lay
+* KEEP_PROP mimcap_2p0_wos LT WT LAY
+* KEEP_PROP mimcap_4p0_sin_3dshs lt wt
+* KEEP_PROP mimcap_4p0_sin_3dshs_3t lt wt lay
+* KEEP_PROP mimcap_shield LT WT LAY
+* KEEP_PROP mimcap_wos LT WT LAY
+* KEEP_PROP moscap_rf lr wr br gr
+* KEEP_PROP moscap_rf33 lr wr br gr
+* KEEP_PROP moscap_rf33_nw lr wr br gr
+* KEEP_PROP moscap_rf_nw lr wr br gr
+* KEEP_PROP ndio_hia_rf aw al fn
+* KEEP_PROP ndio_sbd_mac nf w l
+* KEEP_PROP nld12_g12_mac L W
+* KEEP_PROP nld12_g2_mac L W
+* KEEP_PROP nld14_g12_mac L W
+* KEEP_PROP nld14_g2_mac L W
+* KEEP_PROP nmos_rf LR WR NR
+* KEEP_PROP nmos_rf33 LR WR NR
+* KEEP_PROP nmos_rf33_6t wr lr nr
+* KEEP_PROP nmos_rf_6t wr lr nr
+* KEEP_PROP nmoscap lr wr mr
+* KEEP_PROP nmoscap_33 lr wr mr
+* KEEP_PROP nmoscap_33_mis lr wr mr
+* KEEP_PROP nmoscap_mis lr wr mr
+* KEEP_PROP nvmrpodrpo_m w l
+* KEEP_PROP pdio_hia_rf aw al fn
+* KEEP_PROP pmos_rf LR WR NR
+* KEEP_PROP pmos_rf33 LR WR NR
+* KEEP_PROP pmos_rf33_5t wr lr nr
+* KEEP_PROP pmos_rf33_nw LR WR NR
+* KEEP_PROP pmos_rf33_nw_5t wr lr nr
+* KEEP_PROP pmos_rf_5t wr lr nr
+* KEEP_PROP pmos_rf_nw LR WR NR
+* KEEP_PROP pmos_rf_nw_5t wr lr nr
+* KEEP_PROP rhim l w
+* KEEP_PROP rhvnw l w
+* KEEP_PROP rhvnw_60 l w
+* KEEP_PROP rhvnwhvpw l w
+* KEEP_PROP rhvpw l w
+* KEEP_PROP rhvpw_60 l w
+* KEEP_PROP rldpwod l w
+* KEEP_PROP rldpwsti l w
+* KEEP_PROP rnddhvpw l w
+* KEEP_PROP rnod_m WR LR
+* KEEP_PROP rnodrpo_m WR LR
+* KEEP_PROP rnodw_m WR LR
+* KEEP_PROP rnpo1_dis WR LR
+* KEEP_PROP rnpo1rpo_dis WR LR
+* KEEP_PROP rnpo1w_dis WR LR
+* KEEP_PROP rnwod_ell l w
+* KEEP_PROP rnwod_ell_m WR LR
+* KEEP_PROP rnwod_m WR LR
+* KEEP_PROP rnwod_ull l w
+* KEEP_PROP rnwod_ull_m WR LR
+* KEEP_PROP rnwsti_ell l w
+* KEEP_PROP rnwsti_ell_m WR LR
+* KEEP_PROP rnwsti_m WR LR
+* KEEP_PROP rnwsti_ull l w
+* KEEP_PROP rnwsti_ull_m WR LR
+* KEEP_PROP rpbody l w
+* KEEP_PROP rpddhvnw l w
+* KEEP_PROP rpod_ell l w
+* KEEP_PROP rpod_ell_m WR LR
+* KEEP_PROP rpod_m WR LR
+* KEEP_PROP rpod_ull l w
+* KEEP_PROP rpod_ull_m WR LR
+* KEEP_PROP rpodrpo_ell l w
+* KEEP_PROP rpodrpo_ell_m WR LR
+* KEEP_PROP rpodrpo_m WR LR
+* KEEP_PROP rpodrpo_ull l w
+* KEEP_PROP rpodrpo_ull_m WR LR
+* KEEP_PROP rpodw_ell l w
+* KEEP_PROP rpodw_ell_m WR LR
+* KEEP_PROP rpodw_m WR LR
+* KEEP_PROP rpodw_ull l w
+* KEEP_PROP rpodw_ull_m WR LR
+* KEEP_PROP rppo1_dis WR LR
+* KEEP_PROP rppo1rpo_dis WR LR
+* KEEP_PROP rppo1w_dis WR LR
+* KEEP_PROP rppolyhri3k l w
+* KEEP_PROP rppolyhri3k_dis WR LR
+* KEEP_PROP rppolyhri_dis WR LR
+* KEEP_PROP rppolyhri_rf W L
+* KEEP_PROP rppolyl_rf W L
+* KEEP_PROP rppolys_rf W L
+* KEEP_PROP rppolywo_rf W L
+* KEEP_PROP sbd_dio_60 l
+* KEEP_PROP sbd_rf nf w l
+* KEEP_PROP sbd_rf_nw nf w l
+* KEEP_PROP xjvar_nr36 NR W
+* KEEP_PROP xjvar_w40 NR W
+* KEEP_PROP_END
+*
+.SUBCKT NOR2
+* nothing transcripted
+.ENDS
+***************************************

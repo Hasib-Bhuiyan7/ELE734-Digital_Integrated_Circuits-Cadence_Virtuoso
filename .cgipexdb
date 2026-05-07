@@ -1,0 +1,31 @@
+//  Runset file generated on Tue Oct 14 00:48:07 2025
+//  by Calibre Interactive v2024.3_37.19    Tue Sep 3 16:13:30 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+xrc.rulesFile.value = "/home/student2/ahbhuiya/ele734-Labs/rcx/calibre.rcx"
+xrc.runDir.value = "/home/student2/ahbhuiya/ele734-Labs"
+xrc.layout.layoutFile.value = "nmos.calibre.db"
+cmn.layout.defFiles.value = [ "nmos.def" ]
+xrc.layout.topCellLibrary.value = "lab1"
+cmn.layout.topCellLibraryFDI.value = "lab1"
+xrc.layout.topCell.value = "nmos"
+xrc.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+xrc.source.sourceFile.value = "nmos.src.net"
+xrc.source.topCellLibrary.value = "lab1"
+xrc.source.topCellLibraryFDI.value = "lab1"
+xrc.source.topCell.value = "nmos"
+xrc.source.topCellFDI.value = "nmos"
+xrc.source.topCellView.value = "schematic"
+xrc.source.topCellViewFDI.value = "schematic"
+xrc.pexNetlist.netlistFile.value = "nmos.pex.netlist"
+xrc.pexNetlist.netlistFormat.value = "CALIBREVIEW"
+xrc.pexNetlist.netlistFileViewAfterRun.value = true
+xrc.pexNetlist.system.value = "LAYOUTNAMES"
+xrc.reports.lvsReport.value = "nmos.lvs.report"
+xrc.reports.pexReport.value = "nmos.pex.report"
+xrc.reports.pexReportSystem.value = "LAYOUTNAMES"
+

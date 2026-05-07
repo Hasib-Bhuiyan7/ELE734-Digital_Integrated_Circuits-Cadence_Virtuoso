@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1764619964 1764619966
+lvs_ExtOutFile RUNDIR /home/student2/ahbhuiya/ele734-Labs/lab4/NAND2
+lvs_ExtOutFile RULES_FILE _calibre.lvs_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {12 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST NAND2.sp
+lvs_ExtOutFile EXTRACTION_REPORT NAND2.lvs.report.ext
+lvs_ExtOutFile ERC_DATABASE NAND2.erc.results
+lvs_ExtOutFile ERC_SUMMARY calibre_erc.sum

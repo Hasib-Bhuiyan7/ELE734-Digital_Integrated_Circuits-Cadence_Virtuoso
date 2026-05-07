@@ -1,0 +1,483 @@
+; DESIGN "INVERTER"
+; DATE "Sun Nov  9 18:35:13 2025"
+; VENDOR "Siemens"
+; PROGRAM "Calibre xRC v2024.3_37.19"
+; CIRCUIT TEMPERATURE 25C
+; NOMINAL TEMPERATURE 25C
+;
+
+
+mgc_rve_device_template "fg" "D" "G" "S" "B"
+mgc_rve_device_template "hvnch" "D" "G" "S" "B"
+mgc_rve_device_template "hvzch" "D" "G" "S" "B"
+mgc_rve_device_template "nch" "D" "G" "S" "B"
+mgc_rve_device_template "nch3" "D" "G" "S" "B"
+mgc_rve_device_template "mench" "D" "G" "S" "B"
+mgc_rve_device_template "mench3" "D" "G" "S" "B"
+mgc_rve_device_template "sg" "D" "G" "S" "B"
+mgc_rve_device_template "nanch" "D" "G" "S" "B"
+mgc_rve_device_template "nanch3" "D" "G" "S" "B"
+mgc_rve_device_template "nchrt_cis33" "D" "G" "S" "B"
+mgc_rve_device_template "nchsf_cis33" "D" "G" "S" "B"
+mgc_rve_device_template "nchst_cis33" "D" "G" "S" "B"
+mgc_rve_device_template "nch_ull" "D" "G" "S" "B"
+mgc_rve_device_template "mench3_mac" "D" "G" "S" "B"
+mgc_rve_device_template "mench_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nanch3_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nanch_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch3_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch5_lvt" "D" "G" "S" "B"
+mgc_rve_device_template "nch5_lvt_60" "D" "G" "S" "B"
+mgc_rve_device_template "nch_ana33" "D" "G" "S" "B"
+mgc_rve_device_template "nch_ana33_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_ell" "D" "G" "S" "B"
+mgc_rve_device_template "nch_ell_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_rs3" "D" "G" "S" "B"
+mgc_rve_device_template "nch_rt3" "D" "G" "S" "B"
+mgc_rve_device_template "nch_sf3" "D" "G" "S" "B"
+mgc_rve_device_template "nch_ull_mac" "D" "G" "S" "B"
+mgc_rve_device_template "hvpch" "D" "G" "S" "B"
+mgc_rve_device_template "pch" "D" "G" "S" "B"
+mgc_rve_device_template "mepch" "D" "G" "S" "B"
+mgc_rve_device_template "pch3" "D" "G" "S" "B"
+mgc_rve_device_template "pch_ull" "D" "G" "S" "B"
+mgc_rve_device_template "mepch_mac" "D" "G" "S" "B"
+mgc_rve_device_template "pch3_mac" "D" "G" "S" "B"
+mgc_rve_device_template "pch_ana33" "D" "G" "S" "B"
+mgc_rve_device_template "pch_ana33_mac" "D" "G" "S" "B"
+mgc_rve_device_template "pch_ell" "D" "G" "S" "B"
+mgc_rve_device_template "pch_ell_mac" "D" "G" "S" "B"
+mgc_rve_device_template "pch_mac" "D" "G" "S" "B"
+mgc_rve_device_template "pch_ull_mac" "D" "G" "S" "B"
+mgc_rve_device_template "hvnwdpwnbl10_60" "c" "b" "e"
+mgc_rve_device_template "hvnwdpwnbl2_60" "c" "b" "e"
+mgc_rve_device_template "hvnwdpwnbl5_60" "c" "b" "e"
+mgc_rve_device_template "ldpwhvnwpsub10" "c" "b" "e"
+mgc_rve_device_template "ldpwhvnwpsub2" "c" "b" "e"
+mgc_rve_device_template "ldpwhvnwpsub5" "c" "b" "e"
+mgc_rve_device_template "nhvpwnbl10" "c" "b" "e"
+mgc_rve_device_template "nhvpwnbl10_60" "c" "b" "e"
+mgc_rve_device_template "nhvpwnbl2" "c" "b" "e"
+mgc_rve_device_template "nhvpwnbl5" "c" "b" "e"
+mgc_rve_device_template "nhvpwnbl5_60" "c" "b" "e"
+mgc_rve_device_template "nldpwhvnw10" "c" "b" "e"
+mgc_rve_device_template "nldpwhvnw2" "c" "b" "e"
+mgc_rve_device_template "nldpwhvnw5" "c" "b" "e"
+mgc_rve_device_template "npwnbl10_60" "c" "b" "e"
+mgc_rve_device_template "npwnbl2" "c" "b" "e"
+mgc_rve_device_template "npwnbl2_60" "c" "b" "e"
+mgc_rve_device_template "npwnbl5_60" "c" "b" "e"
+mgc_rve_device_template "nwhvpwnbl10" "c" "b" "e"
+mgc_rve_device_template "nwhvpwnbl10_60" "c" "b" "e"
+mgc_rve_device_template "nwhvpwnbl2" "c" "b" "e"
+mgc_rve_device_template "nwhvpwnbl2_60" "c" "b" "e"
+mgc_rve_device_template "nwhvpwnbl5" "c" "b" "e"
+mgc_rve_device_template "nwhvpwnbl5_60" "c" "b" "e"
+mgc_rve_device_template "pddhvnwpsub10" "c" "b" "e"
+mgc_rve_device_template "pddhvnwpsub2" "c" "b" "e"
+mgc_rve_device_template "pddhvnwpsub5" "c" "b" "e"
+mgc_rve_device_template "phvnwdpw10_60" "c" "b" "e"
+mgc_rve_device_template "phvnwdpw2_60" "c" "b" "e"
+mgc_rve_device_template "phvnwdpw5_60" "c" "b" "e"
+mgc_rve_device_template "phvnwpsub10" "c" "b" "e"
+mgc_rve_device_template "phvnwpsub2" "c" "b" "e"
+mgc_rve_device_template "phvnwpsub5" "c" "b" "e"
+mgc_rve_device_template "pwhvnwdpw10" "c" "b" "e"
+mgc_rve_device_template "pwhvnwdpw2" "c" "b" "e"
+mgc_rve_device_template "pwhvnwdpw5" "c" "b" "e"
+mgc_rve_device_template "pdio_3" "pos" "neg"
+mgc_rve_device_template "ndio_3" "pos" "neg"
+mgc_rve_device_template "nwdio_3" "pos" "neg"
+mgc_rve_device_template "endio_3" "pos" "neg"
+mgc_rve_device_template "nnps_cis" "pos" "neg"
+mgc_rve_device_template "ndio" "pos" "neg"
+mgc_rve_device_template "pdio" "pos" "neg"
+mgc_rve_device_template "nwdio" "pos" "neg"
+mgc_rve_device_template "nwdio_cis" "pos" "neg"
+mgc_rve_device_template "dpwnbl_dio" "pos" "neg"
+mgc_rve_device_template "dpwnbl_dio_60" "pos" "neg"
+mgc_rve_device_template "hvnwdio_hv" "pos" "neg"
+mgc_rve_device_template "hvnwdnwpsubhvpw_dio" "pos" "neg"
+mgc_rve_device_template "hvnwpsub_dio" "pos" "neg"
+mgc_rve_device_template "hvpwdio_hv" "pos" "neg"
+mgc_rve_device_template "hvpwhvnwnbl_dio" "pos" "neg"
+mgc_rve_device_template "hvpwhvnwnbl_dio_60" "pos" "neg"
+mgc_rve_device_template "ldpwhvnw_dio" "pos" "neg"
+mgc_rve_device_template "lvpwdio_hv" "pos" "neg"
+mgc_rve_device_template "nbldio_hv" "pos" "neg"
+mgc_rve_device_template "nblpepi_dio" "pos" "neg"
+mgc_rve_device_template "nblpepi_dio_60" "pos" "neg"
+mgc_rve_device_template "nddhvpw_dio" "pos" "neg"
+mgc_rve_device_template "ndio_3m" "pos" "neg"
+mgc_rve_device_template "ndio_ell" "pos" "neg"
+mgc_rve_device_template "ndio_hv" "pos" "neg"
+mgc_rve_device_template "ndio_m" "pos" "neg"
+mgc_rve_device_template "ndio_ull" "pos" "neg"
+mgc_rve_device_template "nhvpw_dio" "pos" "neg"
+mgc_rve_device_template "nhvpw_dio_60" "pos" "neg"
+mgc_rve_device_template "npdd_dio" "pos" "neg"
+mgc_rve_device_template "nwdio_bg_cis" "pos" "neg"
+mgc_rve_device_template "nwdio_ell" "pos" "neg"
+mgc_rve_device_template "nwdio_ull" "pos" "neg"
+mgc_rve_device_template "pddhvnw_dio" "pos" "neg"
+mgc_rve_device_template "pdio_ell" "pos" "neg"
+mgc_rve_device_template "pdio_hv" "pos" "neg"
+mgc_rve_device_template "pdio_m" "pos" "neg"
+mgc_rve_device_template "pdio_ull" "pos" "neg"
+mgc_rve_device_template "phvnw_dio" "pos" "neg"
+mgc_rve_device_template "phvnw_dio_60" "pos" "neg"
+mgc_rve_device_template "pwhvnw_dio" "pos" "neg"
+mgc_rve_device_template "pwhvnw_dio_60" "pos" "neg"
+mgc_rve_device_template "zd_dio" "pos" "neg"
+mgc_rve_device_template "zd_dio_60" "pos" "neg"
+mgc_rve_device_template "rppolyhri" "pos" "neg"
+mgc_rve_device_template "rm1" "pos" "neg"
+mgc_rve_device_template "rm2" "pos" "neg"
+mgc_rve_device_template "rm3" "pos" "neg"
+mgc_rve_device_template "rm4" "pos" "neg"
+mgc_rve_device_template "rm5" "pos" "neg"
+mgc_rve_device_template "rnodrpo" "pos" "neg"
+mgc_rve_device_template "rnod" "pos" "neg"
+mgc_rve_device_template "rnodw" "pos" "neg"
+mgc_rve_device_template "rnpo1rpo" "pos" "neg"
+mgc_rve_device_template "rnpo1" "pos" "neg"
+mgc_rve_device_template "rnpo1w" "pos" "neg"
+mgc_rve_device_template "rpodrpo" "pos" "neg"
+mgc_rve_device_template "rpod" "pos" "neg"
+mgc_rve_device_template "rpodw" "pos" "neg"
+mgc_rve_device_template "rppo1rpo" "pos" "neg"
+mgc_rve_device_template "rppo1" "pos" "neg"
+mgc_rve_device_template "rppo1w" "pos" "neg"
+mgc_rve_device_template "rnwod" "pos" "neg"
+mgc_rve_device_template "rnwsti" "pos" "neg"
+mgc_rve_device_template "nci_cis" "pos" "neg"
+mgc_rve_device_template "dz" "pos" "neg"
+mgc_rve_device_template "rm6" "pos" "neg"
+mgc_rve_device_template "npn10" "c" "b" "e"
+mgc_rve_device_template "npn10_mis" "C" "B" "E"
+mgc_rve_device_template "npn2" "c" "b" "e"
+mgc_rve_device_template "npn2_mis" "C" "B" "E"
+mgc_rve_device_template "npn5" "c" "b" "e"
+mgc_rve_device_template "npn5_mis" "C" "B" "E"
+mgc_rve_device_template "pnp10_3" "c" "b" "e"
+mgc_rve_device_template "pnp2_3" "c" "b" "e"
+mgc_rve_device_template "pnp5_3" "c" "b" "e"
+mgc_rve_device_template "pnp10" "c" "b" "e"
+mgc_rve_device_template "pnp10_mis" "C" "B" "E"
+mgc_rve_device_template "pnp2" "c" "b" "e"
+mgc_rve_device_template "pnp2_mis" "C" "B" "E"
+mgc_rve_device_template "pnp5" "c" "b" "e"
+mgc_rve_device_template "pnp5_mis" "C" "B" "E"
+mgc_rve_device_template "crtmom" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "crtmom_rf" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "cfmom" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "cfmom_rf" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "cfmom_mx" "PLUS1" "MINUS1" "PLUS2" "MINUS2" "BULK"
+mgc_rve_device_template "efuse" "PLUS" "MINUS"
+mgc_rve_device_template "hvpwdnwhvnw_dio_hvpw_3t" "PLUS" "MINUS" "SUB"
+mgc_rve_device_template "lcesd1_rf" "PLUS" "MINUS"
+mgc_rve_device_template "lcesd2_rf" "PLUS" "MINUS"
+mgc_rve_device_template "lowcpad_rf" "APAD" "AVSS"
+mgc_rve_device_template "lvpwdnwhvnw_dio_hvpw_3t" "PLUS" "MINUS" "SUB"
+mgc_rve_device_template "mimcap_1p0_sin" "TOP" "BOT"
+mgc_rve_device_template "mimcap_1p0_sin_3t" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "mimcap_1p0_sin_hl" "TOP" "BOT"
+mgc_rve_device_template "mimcap_1p0_sin_hl_3t" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "mimcap_1p5_sin" "TOP" "BOT"
+mgc_rve_device_template "mimcap_1p5_sin_3t" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "mimcap_2p0_shield" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "mimcap_2p0_sin" "TOP" "BOT"
+mgc_rve_device_template "mimcap_2p0_sin_3ds" "TOP" "BOTTOM"
+mgc_rve_device_template "mimcap_2p0_sin_3ds_3t" "TOP" "BOTTOM" "GNODE"
+mgc_rve_device_template "mimcap_2p0_sin_3t" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "mimcap_2p0_wos" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "mimcap_4p0_sin_3dshs" "TOP" "BOTTOM"
+mgc_rve_device_template "mimcap_4p0_sin_3dshs_3t" "TOP" "BOTTOM" "GNODE"
+mgc_rve_device_template "mimcap_shield" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "mimcap_wos" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "moscap_rf33" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "moscap_rf33_nw" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "moscap_rf" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "moscap_rf_nw" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "nch_hv5_5vnw_ac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hva" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hva_lg" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hva_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hva_ndd_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvau_ndd_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvi" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvi_lg" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvi_mac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "nch_hviah_ndd_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvish_nbl_mac" "D" "G" "S" "B" "NBL_ISO" "SUB"
+mgc_rve_device_template "nch_hvish_ndd_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvisl_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvnw_6t" "D" "G" "S" "B" "HVNW_ISO" "SUB"
+mgc_rve_device_template "nch_hvs" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvs_lg" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvs_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvs_ndd_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvsl_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_hvsu_ndd_mac" "D" "G" "S" "B"
+mgc_rve_device_template "nch_tg3" "D" "G" "S" "B"
+mgc_rve_device_template "ndio_hia_rf" "PLUS" "MINUS"
+mgc_rve_device_template "ndio_sbd_mac" "PLUS" "MINUS"
+mgc_rve_device_template "ndld24_g5" "D" "G" "S" "B"
+mgc_rve_device_template "ndld24_g5_ac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "ndld40_g5" "D" "G" "S" "B"
+mgc_rve_device_template "ndld40_g5_ac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "nhvpwdnw10_4t" "C" "B" "E" "SUB"
+mgc_rve_device_template "nhvpwdnw5_4t" "C" "B" "E" "SUB"
+mgc_rve_device_template "nld12_g12" "D" "G" "S" "B"
+mgc_rve_device_template "nld12_g12_mac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "nld12_g2" "D" "G" "S" "B"
+mgc_rve_device_template "nld12_g2_mac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "nld14_g12" "D" "G" "S" "B"
+mgc_rve_device_template "nld14_g12_mac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "nld14_g2" "D" "G" "S" "B"
+mgc_rve_device_template "nld14_g2_mac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "nld18_g5" "D" "G" "S" "B"
+mgc_rve_device_template "nld18_g5_ac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "nld24_g5" "D" "G" "S" "B"
+mgc_rve_device_template "nld24_g5_ac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "nld32_g5" "D" "G" "S" "B"
+mgc_rve_device_template "nld32_g5_ac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "nld40_g5" "D" "G" "S" "B"
+mgc_rve_device_template "nld40_g5_ac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "nld60_g5" "D" "G" "S" "B"
+mgc_rve_device_template "nld60_g5_ac" "D" "G" "BS" "SUB"
+mgc_rve_device_template "nmos_rf" "D" "G" "S" "B"
+mgc_rve_device_template "nmos_rf33" "D" "G" "S" "B"
+mgc_rve_device_template "nmos_rf33_6t" "D" "G" "S" "B" "NG" "PG"
+mgc_rve_device_template "nmos_rf_6t" "D" "G" "S" "B" "NG" "PG"
+mgc_rve_device_template "nmoscap" "PLUS" "MINUS"
+mgc_rve_device_template "nmoscap_33" "PLUS" "MINUS"
+mgc_rve_device_template "nmoscap_33_mis" "PLUS" "MINUS"
+mgc_rve_device_template "nmoscap_mis" "PLUS" "MINUS"
+mgc_rve_device_template "npn10_ell" "c" "b" "e"
+mgc_rve_device_template "npn10_ell_mis" "C" "B" "E"
+mgc_rve_device_template "npn10_ull" "c" "b" "e"
+mgc_rve_device_template "npn10_ull_mis" "C" "B" "E"
+mgc_rve_device_template "npn2_ell" "c" "b" "e"
+mgc_rve_device_template "npn2_ell_mis" "C" "B" "E"
+mgc_rve_device_template "npn2_ull" "c" "b" "e"
+mgc_rve_device_template "npn2_ull_mis" "C" "B" "E"
+mgc_rve_device_template "npn5_ell" "c" "b" "e"
+mgc_rve_device_template "npn5_ell_mis" "C" "B" "E"
+mgc_rve_device_template "npn5_ull" "c" "b" "e"
+mgc_rve_device_template "npn5_ull_mis" "C" "B" "E"
+mgc_rve_device_template "npwnbl10" "c" "b" "e"
+mgc_rve_device_template "npwnbl5" "c" "b" "e"
+mgc_rve_device_template "nvmrpodrpo" "pos" "neg"
+mgc_rve_device_template "nvmrpodrpo_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "pa14_g12" "D" "G" "S" "B"
+mgc_rve_device_template "pa14_g2" "D" "G" "S" "B"
+mgc_rve_device_template "pa18_g5" "D" "G" "S" "B"
+mgc_rve_device_template "pa18_g5_ac" "D" "G" "S" "B" "SUB"
+mgc_rve_device_template "pa24_g5" "D" "G" "S" "B"
+mgc_rve_device_template "pa24_g5_ac" "D" "G" "S" "B" "SUB"
+mgc_rve_device_template "pa32_g5" "D" "G" "S" "B"
+mgc_rve_device_template "pa32_g5_ac" "D" "G" "S" "B" "SUB"
+mgc_rve_device_template "pa40_g5_full_soa" "D" "G" "S" "B"
+mgc_rve_device_template "pa40_g5_full_soa_ac" "D" "G" "S" "B" "SUB"
+mgc_rve_device_template "pa40_g5_low_ron" "D" "G" "S" "B"
+mgc_rve_device_template "pa40_g5_low_ron_ac" "D" "G" "S" "B" "SUB"
+mgc_rve_device_template "pa50_g5" "D" "G" "S" "B"
+mgc_rve_device_template "pa50_g5_ac" "D" "G" "S" "B" "SUB"
+mgc_rve_device_template "pa60_g5_full_soa" "D" "G" "S" "B"
+mgc_rve_device_template "pa60_g5_full_soa_ac" "D" "G" "S" "B" "SUB"
+mgc_rve_device_template "pch_5t" "D" "G" "S" "B" "SUB"
+mgc_rve_device_template "pch_hva" "D" "G" "S" "B"
+mgc_rve_device_template "pch_hva_lg" "D" "G" "S" "B"
+mgc_rve_device_template "pch_hva_mac" "D" "G" "S" "B" "SUB"
+mgc_rve_device_template "pch_hva_pdd_mac" "D" "G" "S" "B"
+mgc_rve_device_template "pch_hvau_pdd_mac" "D" "G" "S" "B"
+mgc_rve_device_template "pch_hvs" "D" "G" "S" "B"
+mgc_rve_device_template "pch_hvs_lg" "D" "G" "S" "B"
+mgc_rve_device_template "pch_hvs_mac" "D" "G" "S" "B" "SUB"
+mgc_rve_device_template "pch_hvs_pdd_mac" "D" "G" "S" "B"
+mgc_rve_device_template "pch_hvsl_mac" "D" "G" "S" "B"
+mgc_rve_device_template "pch_hvsu_pdd_mac" "D" "G" "S" "B"
+mgc_rve_device_template "pdio_hia_rf" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "phvnw_dio_hvpw_3t" "PLUS" "MINUS" "SUB"
+mgc_rve_device_template "pindio_cis" "pos" "neg"
+mgc_rve_device_template "pmos_rf" "D" "G" "S" "B"
+mgc_rve_device_template "pmos_rf33" "D" "G" "S" "B"
+mgc_rve_device_template "pmos_rf33_5t" "D" "G" "S" "B" "PG"
+mgc_rve_device_template "pmos_rf33_nw" "D" "G" "S" "B"
+mgc_rve_device_template "pmos_rf33_nw_5t" "D" "G" "S" "B" "PG"
+mgc_rve_device_template "pmos_rf_5t" "D" "G" "S" "B" "PG"
+mgc_rve_device_template "pmos_rf_nw" "D" "G" "S" "B"
+mgc_rve_device_template "pmos_rf_nw_5t" "D" "G" "S" "B" "PG"
+mgc_rve_device_template "pnp10_ell" "c" "b" "e"
+mgc_rve_device_template "pnp10_ell_mis" "C" "B" "E"
+mgc_rve_device_template "pnp10_ull" "c" "b" "e"
+mgc_rve_device_template "pnp10_ull_mis" "C" "B" "E"
+mgc_rve_device_template "pnp2_ell" "c" "b" "e"
+mgc_rve_device_template "pnp2_ell_mis" "C" "B" "E"
+mgc_rve_device_template "pnp2_ull" "c" "b" "e"
+mgc_rve_device_template "pnp2_ull_mis" "C" "B" "E"
+mgc_rve_device_template "pnp5_ell" "c" "b" "e"
+mgc_rve_device_template "pnp5_ell_mis" "C" "B" "E"
+mgc_rve_device_template "pnp5_ull" "c" "b" "e"
+mgc_rve_device_template "pnp5_ull_mis" "C" "B" "E"
+mgc_rve_device_template "hvnwdnwpsubhvpw_dio_iso" "pos" "neg"
+mgc_rve_device_template "hvnwdnwpsubhvpw_dio_iso_ac" "pos" "neg"
+mgc_rve_device_template "hvnwpsubhvpw_dio_iso_ac" "pos" "neg"
+mgc_rve_device_template "hvpwdio_hv_iso" "pos" "neg"
+mgc_rve_device_template "nbldio_hv_iso" "pos" "neg"
+mgc_rve_device_template "rhim" "PLUS" "MINUS"
+mgc_rve_device_template "rhvnw" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rhvnw_60" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rhvnwhvpw" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rhvpw" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rhvpw_60" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rldpwod" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rldpwsti" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rnddhvpw" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rnod_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rnodrpo_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rnodw_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rnpo1_dis" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rnpo1rpo_dis" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rnpo1w_dis" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rnwod_ell" "PLUS" "MINUS"
+mgc_rve_device_template "rnwod_ell_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rnwod_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rnwod_ull" "PLUS" "MINUS"
+mgc_rve_device_template "rnwod_ull_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rnwsti_ell" "PLUS" "MINUS"
+mgc_rve_device_template "rnwsti_ell_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rnwsti_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rnwsti_ull" "PLUS" "MINUS"
+mgc_rve_device_template "rnwsti_ull_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rpbody" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rpddhvnw" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rpod_ell" "PLUS" "MINUS"
+mgc_rve_device_template "rpod_ell_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rpod_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rpod_ull" "PLUS" "MINUS"
+mgc_rve_device_template "rpod_ull_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rpodrpo_ell" "PLUS" "MINUS"
+mgc_rve_device_template "rpodrpo_ell_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rpodrpo_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rpodrpo_ull" "PLUS" "MINUS"
+mgc_rve_device_template "rpodrpo_ull_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rpodw_ell" "PLUS" "MINUS"
+mgc_rve_device_template "rpodw_ell_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rpodw_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rpodw_ull" "PLUS" "MINUS"
+mgc_rve_device_template "rpodw_ull_m" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rppo1_dis" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rppo1rpo_dis" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rppo1w_dis" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rppolyhri3k" "PLUS" "MINUS"
+mgc_rve_device_template "rppolyhri3k_dis" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rppolyhri_dis" "PLUS" "MINUS" "B"
+mgc_rve_device_template "rppolyhri_rf" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rppolyl_rf" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rppolys_rf" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "rppolywo_rf" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "sbd_dio_60" "PLUS" "MINUS"
+mgc_rve_device_template "sbd_rf" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "sbd_rf_nw" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "xjvar_nr36" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "xjvar_w40" "PLUS" "MINUS" "BULK"
+mgc_rve_device_template "zd_dio_4t" "PLUS" "MINUS" "NBL_ISO" "SUB"
+mgc_rve_device_template "v" "P" "M"
+mgc_rve_device_template "f" "P" "M"
+mgc_rve_parasitic_template "c" "r" "l" "k" "h"
+
+mgc_rve_cell_start "INVERTER" "IN" "VDD" "VSS" "OUT"
+mr_pi "nch" "M0" '( "M0_d" "M0_g" "M0_s" "M0_b") '( ("l" 1.8e-07) ("w" 1e-06) ("ad" 6.1e-13) ("as" 6.1e-13) ("pd" 3.22e-06) ("ps" 3.22e-06) ("nrd" 0.61) ("nrs" 0.61) ("sa" 6.1e-07) ("sb" 6.1e-07) ("sca" 0.891489) ("scb" 4.89457e-08) ("scc" 1.25938e-15) ("lpe" 3) )
+mr_pi "pch" "M1" '( "M1_d" "M1_g" "M1_s" "M1_b") '( ("l" 1.8e-07) ("w" 4e-06) ("ad" 2.44e-12) ("as" 2.44e-12) ("pd" 9.22e-06) ("ps" 9.22e-06) ("nrd" 0.1525) ("nrs" 0.1525) ("sa" 6.1e-07) ("sb" 6.1e-07) ("sca" 1.40696) ("scb" 7.6741e-06) ("scc" 1.92867e-10) ("lpe" 3) )
+
+mr_ni "IN" 269.962 6.18629e-16 3.87449e-16 '( "M0_g" "M1_g" )
+mr_pp 'c "ciIN_8" '("c_8_p" "0") 0.131248f
+mr_pp 'c "ciIN_9" '("IN_23" "0") 0.00763169f
+mr_pp 'c "ciIN_10" '("IN_20" "0") 0.0842288f
+mr_pp 'c "ciIN_11" '("c_6_p" "0") 0.084627f
+mr_pp 'c "ciIN_12" '("c_7_p" "0") 0.0422287f
+mr_pp 'c "ciIN_13" '("IN_3" "0") 0.00763169f
+mr_pp 'c "ciIN_14" '("M1_g" "0") 0.129532f
+mr_pp 'c "ciIN_15" '("M0_g" "0") 0.131501f
+mr_pp 'r "rIN_16" '("IN" "c_8_p") 0.263824
+mr_pp 'r "rIN_17" '("IN_18" "c_8_p") 7.8
+mr_pp 'r "rIN_18" '("IN_18" "IN_20") 5.62405
+mr_pp 'r "rIN_19" '("c_6_p" "IN_23") 3.92818
+mr_pp 'r "rIN_20" '("IN_5" "IN_20") 3.69648
+mr_pp 'r "rIN_21" '("IN_5" "c_6_p") 43.6464
+mr_pp 'r "rIN_22" '("c_7_p" "IN_20") 3.69648
+mr_pp 'r "rIN_23" '("IN_3" "IN_22") 3.92818
+mr_pp 'r "rIN_24" '("IN_3" "c_7_p") 21.8232
+mr_pp 'r "rIN_25" '("M1_g" "IN_23") 109.722
+mr_pp 'r "rIN_26" '("M0_g" "IN_22") 65.8333
+
+
+mr_ni "VDD" 29.2667 2.9844e-16 2.77338e-16 '( "M1_b" "M1_s" )
+mr_pp 'c "ciVDD_4" '("VDD_26" "0") 0.0900157f
+mr_pp 'c "ciVDD_5" '("c_10_n" "0") 0.0481988f
+mr_pp 'c "ciVDD_6" '("VDD" "0") 0.160225f
+mr_pp 'r "rVDD_7" '("VDD_26" "VDD_28") 0.00663
+mr_pp 'r "rVDD_8" '("VDD_23" "VDD_25") 0.33913
+mr_pp 'r "rVDD_9" '("c_10_n" "VDD_23") 0.508696
+mr_pp 'r "rVDD_10" '("VDD_18" "VDD_26") 0.0708657
+mr_pp 'r "rVDD_11" '("VDD_18" "VDD_25") 0.376435
+mr_pp 'r "rVDD_12" '("VDD" "VDD_28") 0.02262
+mr_pp 'r "rVDD_13" '("VDD_8" "VDD_28") 5.5
+mr_pp 'r "rVDD_14" '("VDD_8" "M1_b") 5.02667
+mr_pp 'r "rVDD_15" '("VDD_3" "VDD_25") 10
+mr_pp 'r "rVDD_16" '("VDD_3" "VDD_23") 3.33333
+mr_pp 'r "rVDD_17" '("VDD_3" "c_10_n") 3.33333
+mr_pp 'r "rVDD_18" '("M1_s" "VDD_3") 0.749
+
+
+mr_ni "VSS" 18.9246 2.81667e-16 9.23882e-17 '( "M0_b" "M0_s" )
+mr_pp 'c "ciVSS_4" '("VSS_304" "0") 0.0906726f
+mr_pp 'c "ciVSS_5" '("c_14_n" "0") 0.0267533f
+mr_pp 'c "ciVSS_6" '("VSS" "0") 0.164241f
+mr_pp 'r "rVSS_7" '("VSS_304" "VSS_306") 0.00663
+mr_pp 'r "rVSS_8" '("VSS_300" "VSS_304") 0.0708657
+mr_pp 'r "rVSS_9" '("VSS_300" "c_14_n") 0.240783
+mr_pp 'r "rVSS_10" '("VSS" "VSS_306") 0.02262
+mr_pp 'r "rVSS_11" '("VSS_11" "c_14_n") 5.5
+mr_pp 'r "rVSS_12" '("M0_s" "VSS_11") 2.912
+mr_pp 'r "rVSS_13" '("VSS_2" "VSS_306") 5
+mr_pp 'r "rVSS_14" '("VSS_2" "M0_b") 5.17167
+
+
+mr_ni "OUT" 28.828 3.2316e-16 4.25931e-16 '( "M0_d" "M1_d" )
+mr_pp 'c "ciOUT_8" '("c_19_n" "0") 0.00557974f
+mr_pp 'c "ciOUT_9" '("c_18_n" "0") 0.0873369f
+mr_pp 'c "ciOUT_10" '("c_17_n" "0") 0.0873369f
+mr_pp 'c "ciOUT_11" '("OUT" "0") 0.142906f
+mr_pp 'r "rOUT_12" '("OUT_24" "c_19_n") 0.000122113
+mr_pp 'r "rOUT_13" '("OUT_20" "OUT_22") 0.33913
+mr_pp 'r "rOUT_14" '("c_18_n" "OUT_20") 0.508696
+mr_pp 'r "rOUT_15" '("OUT_16" "c_19_n") 0.0451127
+mr_pp 'r "rOUT_16" '("OUT_16" "c_18_n") 0.990261
+mr_pp 'r "rOUT_17" '("OUT_12" "c_19_n") 0.0451127
+mr_pp 'r "rOUT_18" '("OUT_12" "c_17_n") 0.820696
+mr_pp 'r "rOUT_19" '("OUT" "OUT_24") 0.251206
+mr_pp 'r "rOUT_20" '("OUT_9" "c_17_n") 5.5
+mr_pp 'r "rOUT_21" '("M0_d" "OUT_9") 2.912
+mr_pp 'r "rOUT_22" '("OUT_3" "OUT_22") 10
+mr_pp 'r "rOUT_23" '("OUT_3" "OUT_20") 3.33333
+mr_pp 'r "rOUT_24" '("OUT_3" "c_18_n") 3.33333
+mr_pp 'r "rOUT_25" '("M1_d" "OUT_3") 0.749
+
+mr_pp 'c "cc_1" '("M1_g" "VDD") 0.0186532f
+mr_pp 'c "cc_2" '("M1_g" "c_10_n") 0.103205f
+mr_pp 'c "cc_3" '("M0_g" "VSS") 0.0103432f
+mr_pp 'c "cc_4" '("M0_g" "c_14_n") 0.0334206f
+mr_pp 'c "cc_5" '("M0_g" "c_17_n") 0.0665832f
+mr_pp 'c "cc_6" '("c_6_p" "c_18_n") 0.0665832f
+mr_pp 'c "cc_7" '("c_7_p" "c_19_n") 0.0665832f
+mr_pp 'c "cc_8" '("c_8_p" "c_19_n") 0.0220771f
+mr_pp 'c "cc_9" '("VDD" "c_18_n") 0.0086567f
+mr_pp 'c "cc_10" '("c_10_n" "c_18_n") 0.146823f
+mr_pp 'c "cc_11" '("VSS" "c_17_n") 0.014166f
+mr_pp 'c "cc_12" '("c_14_n" "c_17_n") 0.0344584f
+mgc_rve_cell_end
+

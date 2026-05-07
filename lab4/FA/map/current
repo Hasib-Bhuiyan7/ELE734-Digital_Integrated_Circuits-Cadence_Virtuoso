@@ -1,0 +1,16 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "FA"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  hierDelim "."
+  netlistDir "/home/student2/ahbhuiya/ele734-Labs/lab4/FA"
+ )
+( model
+( "lab4/FA/schematic" "FA" )
+( "lab4/NAND2/schematic" "NAND2" )
+ )
+( "FA" "ihnl/cds1/map" )
+( "NAND2" "ihnl/cds0/map" )
+ )

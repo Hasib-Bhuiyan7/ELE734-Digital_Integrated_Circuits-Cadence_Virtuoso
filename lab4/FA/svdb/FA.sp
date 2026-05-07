@@ -1,0 +1,512 @@
+* SPICE NETLIST
+***************************************
+
+.SUBCKT crtmom PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT crtmom_rf PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT cfmom PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT cfmom_rf PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT cfmom_mx PLUS1 MINUS1 PLUS2 MINUS2 BULK
+.ENDS
+***************************************
+.SUBCKT efuse PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT hvpwdnwhvnw_dio_hvpw_3t PLUS MINUS SUB
+.ENDS
+***************************************
+.SUBCKT lcesd1_rf PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT lcesd2_rf PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT lowcpad_rf APAD AVSS
+.ENDS
+***************************************
+.SUBCKT lvpwdnwhvnw_dio_hvpw_3t PLUS MINUS SUB
+.ENDS
+***************************************
+.SUBCKT mimcap_1p0_sin TOP BOT
+.ENDS
+***************************************
+.SUBCKT mimcap_1p0_sin_3t PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT mimcap_1p0_sin_hl TOP BOT
+.ENDS
+***************************************
+.SUBCKT mimcap_1p0_sin_hl_3t PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT mimcap_1p5_sin TOP BOT
+.ENDS
+***************************************
+.SUBCKT mimcap_1p5_sin_3t PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT mimcap_2p0_shield PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT mimcap_2p0_sin TOP BOT
+.ENDS
+***************************************
+.SUBCKT mimcap_2p0_sin_3ds TOP BOTTOM
+.ENDS
+***************************************
+.SUBCKT mimcap_2p0_sin_3ds_3t TOP BOTTOM GNODE
+.ENDS
+***************************************
+.SUBCKT mimcap_2p0_sin_3t PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT mimcap_2p0_wos PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT mimcap_4p0_sin_3dshs TOP BOTTOM
+.ENDS
+***************************************
+.SUBCKT mimcap_4p0_sin_3dshs_3t TOP BOTTOM GNODE
+.ENDS
+***************************************
+.SUBCKT mimcap_shield PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT mimcap_wos PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT moscap_rf33 PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT moscap_rf33_nw PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT moscap_rf PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT moscap_rf_nw PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT nch_hv5_5vnw_ac D G S B
+.ENDS
+***************************************
+.SUBCKT LDDN D G S B
+.ENDS
+***************************************
+.SUBCKT nch_hva_mac D G S B
+.ENDS
+***************************************
+.SUBCKT nch_hva_ndd_mac D G S B
+.ENDS
+***************************************
+.SUBCKT nch_hvau_ndd_mac D G S B
+.ENDS
+***************************************
+.SUBCKT nch_hvi_mac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT nch_hviah_ndd_mac D G S B
+.ENDS
+***************************************
+.SUBCKT nch_hvish_nbl_mac D G S B NBL_ISO SUB
+.ENDS
+***************************************
+.SUBCKT nch_hvish_ndd_mac D G S B
+.ENDS
+***************************************
+.SUBCKT nch_hvisl_mac D G S B
+.ENDS
+***************************************
+.SUBCKT nch_hvnw_6t D G S B HVNW_ISO SUB
+.ENDS
+***************************************
+.SUBCKT nch_hvs_mac D G S B
+.ENDS
+***************************************
+.SUBCKT nch_hvs_ndd_mac D G S B
+.ENDS
+***************************************
+.SUBCKT nch_hvsl_mac D G S B
+.ENDS
+***************************************
+.SUBCKT nch_hvsu_ndd_mac D G S B
+.ENDS
+***************************************
+.SUBCKT ndio_hia_rf PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT ndio_sbd_mac PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT ndld24_g5_ac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT ndld40_g5_ac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT nhvpwdnw10_4t C B E SUB
+.ENDS
+***************************************
+.SUBCKT nhvpwdnw5_4t C B E SUB
+.ENDS
+***************************************
+.SUBCKT nld12_g12_mac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT nld12_g2_mac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT nld14_g12_mac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT nld14_g2_mac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT nld18_g5_ac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT nld24_g5_ac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT nld32_g5_ac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT nld40_g5_ac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT nld60_g5_ac D G BS SUB
+.ENDS
+***************************************
+.SUBCKT nmos_rf D G S B
+.ENDS
+***************************************
+.SUBCKT nmos_rf33 D G S B
+.ENDS
+***************************************
+.SUBCKT nmos_rf33_6t D G S B NG PG
+.ENDS
+***************************************
+.SUBCKT nmos_rf_6t D G S B NG PG
+.ENDS
+***************************************
+.SUBCKT nmoscap PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT nmoscap_33 PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT nmoscap_33_mis PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT nmoscap_mis PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT nvmrpodrpo_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT LDDP D G S B
+.ENDS
+***************************************
+.SUBCKT pa18_g5_ac D G S B SUB
+.ENDS
+***************************************
+.SUBCKT pa24_g5_ac D G S B SUB
+.ENDS
+***************************************
+.SUBCKT pa32_g5_ac D G S B SUB
+.ENDS
+***************************************
+.SUBCKT pa40_g5_full_soa_ac D G S B SUB
+.ENDS
+***************************************
+.SUBCKT pa40_g5_low_ron_ac D G S B SUB
+.ENDS
+***************************************
+.SUBCKT pa50_g5_ac D G S B SUB
+.ENDS
+***************************************
+.SUBCKT pa60_g5_full_soa_ac D G S B SUB
+.ENDS
+***************************************
+.SUBCKT pch_5t D G S B SUB
+.ENDS
+***************************************
+.SUBCKT pch_hva_mac D G S B SUB
+.ENDS
+***************************************
+.SUBCKT pch_hva_pdd_mac D G S B
+.ENDS
+***************************************
+.SUBCKT pch_hvau_pdd_mac D G S B
+.ENDS
+***************************************
+.SUBCKT pch_hvs_mac D G S B SUB
+.ENDS
+***************************************
+.SUBCKT pch_hvs_pdd_mac D G S B
+.ENDS
+***************************************
+.SUBCKT pch_hvsl_mac D G S B
+.ENDS
+***************************************
+.SUBCKT pch_hvsu_pdd_mac D G S B
+.ENDS
+***************************************
+.SUBCKT pdio_hia_rf PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT phvnw_dio_hvpw_3t PLUS MINUS SUB
+.ENDS
+***************************************
+.SUBCKT pmos_rf D G S B
+.ENDS
+***************************************
+.SUBCKT pmos_rf33 D G S B
+.ENDS
+***************************************
+.SUBCKT pmos_rf33_5t D G S B PG
+.ENDS
+***************************************
+.SUBCKT pmos_rf33_nw D G S B
+.ENDS
+***************************************
+.SUBCKT pmos_rf33_nw_5t D G S B PG
+.ENDS
+***************************************
+.SUBCKT pmos_rf_5t D G S B PG
+.ENDS
+***************************************
+.SUBCKT pmos_rf_nw D G S B
+.ENDS
+***************************************
+.SUBCKT pmos_rf_nw_5t D G S B PG
+.ENDS
+***************************************
+.SUBCKT rhim PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rhvnw PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rhvnw_60 PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rhvnwhvpw PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rhvpw PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rhvpw_60 PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rldpwod PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rldpwsti PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rnddhvpw PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rnod_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rnodrpo_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rnodw_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rnpo1_dis PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rnpo1rpo_dis PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rnpo1w_dis PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rnwod_ell PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rnwod_ell_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rnwod_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rnwod_ull PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rnwod_ull_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rnwsti_ell PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rnwsti_ell_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rnwsti_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rnwsti_ull PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rnwsti_ull_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rpbody PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rpddhvnw PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rpod_ell PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rpod_ell_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rpod_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rpod_ull PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rpod_ull_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rpodrpo_ell PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rpodrpo_ell_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rpodrpo_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rpodrpo_ull PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rpodrpo_ull_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rpodw_ell PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rpodw_ell_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rpodw_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rpodw_ull PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rpodw_ull_m PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rppo1_dis PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rppo1rpo_dis PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rppo1w_dis PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rppolyhri3k PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rppolyhri3k_dis PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rppolyhri_dis PLUS MINUS B
+.ENDS
+***************************************
+.SUBCKT rppolyhri_rf PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rppolyl_rf PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rppolys_rf PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT rppolywo_rf PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT sbd_dio_60 PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT sbd_rf PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT sbd_rf_nw PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT xjvar_nr36 PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT xjvar_w40 PLUS MINUS BULK
+.ENDS
+***************************************
+.SUBCKT zd_dio_4t PLUS MINUS NBL_ISO SUB
+.ENDS
+***************************************
+.SUBCKT FA B A C VSS VDD S Co
+** N=23 EP=7 IP=0 FDC=36
+* PORT B B 1797 6084 metal2
+* PORT A A 2038 7083 metal2
+* PORT C C 16506 6063 metal2
+* PORT VSS VSS 1226 1099 metal1
+* PORT VDD VDD 783 21389 metal1
+* PORT S S 29909 5353 metal1
+* PORT Co Co 33586 7294 metal1
+M0 15 B VSS VSS N L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.71e-06 sca=0.499019 scb=2.04693e-08 scc=1.52937e-15 $X=2400 $Y=2070 $D=3
+M1 3 A 15 VSS N L=1.8e-07 W=2e-06 AD=1.42e-12 AS=8.2e-13 PD=5.42e-06 PS=2.82e-06 NRD=0.355 NRS=0.205 sa=1.61e-06 sb=7.1e-07 sca=0.360603 scb=1.60433e-08 scc=1.51705e-15 $X=3400 $Y=2070 $D=3
+M2 16 3 VSS VSS N L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.71e-06 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=6080 $Y=2070 $D=3
+M3 5 A 16 VSS N L=1.8e-07 W=2e-06 AD=1.42e-12 AS=8.2e-13 PD=5.42e-06 PS=2.82e-06 NRD=0.355 NRS=0.205 sa=1.61e-06 sb=7.1e-07 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=7080 $Y=2070 $D=3
+M4 17 B VSS VSS N L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.71e-06 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=9750 $Y=2070 $D=3
+M5 4 3 17 VSS N L=1.8e-07 W=2e-06 AD=1.42e-12 AS=8.2e-13 PD=5.42e-06 PS=2.82e-06 NRD=0.355 NRS=0.205 sa=1.61e-06 sb=7.1e-07 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=10750 $Y=2070 $D=3
+M6 18 4 VSS VSS N L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.71e-06 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=13420 $Y=2070 $D=3
+M7 7 5 18 VSS N L=1.8e-07 W=2e-06 AD=1.42e-12 AS=8.2e-13 PD=5.42e-06 PS=2.82e-06 NRD=0.355 NRS=0.205 sa=1.61e-06 sb=7.1e-07 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=14420 $Y=2070 $D=3
+M8 19 C VSS VSS N L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.71e-06 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=17090 $Y=2070 $D=3
+M9 8 7 19 VSS N L=1.8e-07 W=2e-06 AD=1.42e-12 AS=8.2e-13 PD=5.42e-06 PS=2.82e-06 NRD=0.355 NRS=0.205 sa=1.61e-06 sb=7.1e-07 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=18090 $Y=2070 $D=3
+M10 20 8 VSS VSS N L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.71e-06 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=20760 $Y=2070 $D=3
+M11 10 7 20 VSS N L=1.8e-07 W=2e-06 AD=1.42e-12 AS=8.2e-13 PD=5.42e-06 PS=2.82e-06 NRD=0.355 NRS=0.205 sa=1.61e-06 sb=7.1e-07 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=21760 $Y=2070 $D=3
+M12 21 C VSS VSS N L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.71e-06 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=24430 $Y=2070 $D=3
+M13 9 8 21 VSS N L=1.8e-07 W=2e-06 AD=1.42e-12 AS=8.2e-13 PD=5.42e-06 PS=2.82e-06 NRD=0.355 NRS=0.205 sa=1.61e-06 sb=7.1e-07 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=25430 $Y=2070 $D=3
+M14 22 9 VSS VSS N L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.71e-06 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=28100 $Y=2070 $D=3
+M15 S 10 22 VSS N L=1.8e-07 W=2e-06 AD=1.42e-12 AS=8.2e-13 PD=5.42e-06 PS=2.82e-06 NRD=0.355 NRS=0.205 sa=1.61e-06 sb=7.1e-07 sca=0.288372 scb=1.6043e-08 scc=1.51705e-15 $X=29100 $Y=2070 $D=3
+M16 23 3 VSS VSS N L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.71e-06 sca=0.368373 scb=1.60438e-08 scc=1.51705e-15 $X=31770 $Y=2070 $D=3
+M17 Co 8 23 VSS N L=1.8e-07 W=2e-06 AD=1.42e-12 AS=8.2e-13 PD=5.42e-06 PS=2.82e-06 NRD=0.355 NRS=0.205 sa=1.61e-06 sb=7.1e-07 sca=0.525935 scb=2.74671e-08 scc=1.60341e-15 $X=32770 $Y=2070 $D=3
+M18 3 B VDD VDD P L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.91e-06 sca=0.815071 scb=3.28559e-06 scc=1.04801e-11 $X=2400 $Y=17070 $D=39
+M19 VDD A 3 VDD P L=1.8e-07 W=2e-06 AD=1.82e-12 AS=8.2e-13 PD=5.82e-06 PS=2.82e-06 NRD=0.455 NRS=0.205 sa=1.61e-06 sb=9.1e-07 sca=0.409831 scb=4.82622e-10 scc=2.56542e-19 $X=3400 $Y=17070 $D=39
+M20 5 3 VDD VDD P L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.91e-06 sca=0.260841 scb=2.16422e-10 scc=2.17728e-19 $X=6080 $Y=17070 $D=39
+M21 VDD A 5 VDD P L=1.8e-07 W=2e-06 AD=1.82e-12 AS=8.2e-13 PD=5.82e-06 PS=2.82e-06 NRD=0.455 NRS=0.205 sa=1.61e-06 sb=9.1e-07 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=7080 $Y=17070 $D=39
+M22 4 B VDD VDD P L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.91e-06 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=9750 $Y=17070 $D=39
+M23 VDD 3 4 VDD P L=1.8e-07 W=2e-06 AD=1.82e-12 AS=8.2e-13 PD=5.82e-06 PS=2.82e-06 NRD=0.455 NRS=0.205 sa=1.61e-06 sb=9.1e-07 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=10750 $Y=17070 $D=39
+M24 7 4 VDD VDD P L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.91e-06 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=13420 $Y=17070 $D=39
+M25 VDD 5 7 VDD P L=1.8e-07 W=2e-06 AD=1.82e-12 AS=8.2e-13 PD=5.82e-06 PS=2.82e-06 NRD=0.455 NRS=0.205 sa=1.61e-06 sb=9.1e-07 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=14420 $Y=17070 $D=39
+M26 8 C VDD VDD P L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.91e-06 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=17090 $Y=17070 $D=39
+M27 VDD 7 8 VDD P L=1.8e-07 W=2e-06 AD=1.82e-12 AS=8.2e-13 PD=5.82e-06 PS=2.82e-06 NRD=0.455 NRS=0.205 sa=1.61e-06 sb=9.1e-07 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=18090 $Y=17070 $D=39
+M28 10 8 VDD VDD P L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.91e-06 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=20760 $Y=17070 $D=39
+M29 VDD 7 10 VDD P L=1.8e-07 W=2e-06 AD=1.82e-12 AS=8.2e-13 PD=5.82e-06 PS=2.82e-06 NRD=0.455 NRS=0.205 sa=1.61e-06 sb=9.1e-07 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=21760 $Y=17070 $D=39
+M30 9 C VDD VDD P L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.91e-06 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=24430 $Y=17070 $D=39
+M31 VDD 8 9 VDD P L=1.8e-07 W=2e-06 AD=1.82e-12 AS=8.2e-13 PD=5.82e-06 PS=2.82e-06 NRD=0.455 NRS=0.205 sa=1.61e-06 sb=9.1e-07 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=25430 $Y=17070 $D=39
+M32 S 9 VDD VDD P L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.91e-06 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=28100 $Y=17070 $D=39
+M33 VDD 10 S VDD P L=1.8e-07 W=2e-06 AD=1.82e-12 AS=8.2e-13 PD=5.82e-06 PS=2.82e-06 NRD=0.455 NRS=0.205 sa=1.61e-06 sb=9.1e-07 sca=0.259116 scb=2.16422e-10 scc=2.17728e-19 $X=29100 $Y=17070 $D=39
+M34 Co 3 VDD VDD P L=1.8e-07 W=2e-06 AD=8.2e-13 AS=1.22e-12 PD=2.82e-06 PS=5.22e-06 NRD=0.205 NRS=0.305 sa=6.1e-07 sb=1.91e-06 sca=0.368612 scb=2.31423e-10 scc=2.17837e-19 $X=31770 $Y=17070 $D=39
+M35 VDD 8 Co VDD P L=1.8e-07 W=2e-06 AD=1.82e-12 AS=8.2e-13 PD=5.82e-06 PS=2.82e-06 NRD=0.455 NRS=0.205 sa=1.61e-06 sb=9.1e-07 sca=0.61237 scb=2.02292e-07 scc=3.21877e-14 $X=32770 $Y=17070 $D=39
+.ENDS
+***************************************

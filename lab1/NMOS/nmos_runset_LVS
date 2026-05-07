@@ -1,0 +1,35 @@
+//  Runset file generated on Sun Nov 9 01:31:39 2025
+//  by Calibre Interactive v2024.3_37.19    Tue Sep 3 16:13:30 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+lvs.rulesFile.value = "/CMC/kits/cmosp18.6.13a_ic6/Calibre/lvs/calibre.lvs"
+lvs.runDir.value = "/home/student2/ahbhuiya/ele734-Labs/lab2/INVERTER"
+lvs.layout.layoutFile.value = "INVERTER.calibre.db"
+cmn.layout.defFiles.value = [ "INVERTER.def" ]
+lvs.layout.topCellLibrary.value = "lab2"
+cmn.layout.topCellLibraryFDI.value = "lab2"
+lvs.layout.topCell.value = "INVERTER"
+lvs.layout.topCellView.value = "layout"
+cmn.layout.topCellViewFDI.value = "layout"
+lvs.layout.layoutNetlist.value = "INVERTER.sp"
+lvs.source2.sourceFile.value = "INVERTER.sp"
+lvs.source2.topCellLibrary.value = "lab2"
+lvs.source2.topCellLibraryFDI.value = "lab2"
+lvs.source2.topCell.value = "INVERTER"
+lvs.source2.topCellFDI.value = "INVERTER"
+lvs.source2.topCellView.value = "schematic"
+lvs.source2.topCellViewFDI.value = "schematic"
+lvs.source.sourceFile.value = "INVERTER.src.net"
+lvs.source.topCellLibrary.value = "lab2"
+lvs.source.topCellLibraryFDI.value = "lab2"
+lvs.source.topCell.value = "INVERTER"
+lvs.source.topCellFDI.value = "INVERTER"
+lvs.source.topCellView.value = "schematic"
+lvs.source.topCellViewFDI.value = "schematic"
+lvs.reports.lvsReport.value = "INVERTER.lvs.report"
+lvs.ercdb.resultsFile.value = "INVERTER.erc.results"
+lvs.ercSummaryReport.report.value = "INVERTER.erc.summary"
+

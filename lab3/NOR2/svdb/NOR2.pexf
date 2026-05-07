@@ -1,0 +1,5 @@
+# Automagically generated file: Please do not edit!
+pex_PexParam RUNDIR /home/student2/ahbhuiya/ele734-Labs/lab3/NOR2
+pex_PexParam LAYOUT_PRIMARY NOR2
+pex_PexParam TOOL xRC
+pex_PexParam CORNER_PDBS { {NOR2 "" NOR2.pdb "" } } 

@@ -1,0 +1,32 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab3
+* Top Cell Name: NOR2
+* View Name:     schematic
+* Netlisted on:  Nov 19 18:38:26 2025
+************************************************************************
+
+.INCLUDE  /CMC/kits/cmosp18.6.13a_ic6/tsmc18/../Calibre/lvs/source.added
+*.EQUATION
+*.LDD
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: lab3
+* Cell Name:    NOR2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT NOR2 A B OUT VDD VSS
+*.PININFO A:I B:I OUT:O VDD:B VSS:B
+MM1 OUT B VSS VSS N l=180.0n w=1e-6 m=1
+MM0 OUT A VSS VSS N l=180.0n w=1e-6 m=1
+MM3 OUT B net1 VDD P l=180.0n w=4e-6 m=1
+MM2 net1 A VDD VDD P l=180.0n w=4e-6 m=1
+.ENDS
+

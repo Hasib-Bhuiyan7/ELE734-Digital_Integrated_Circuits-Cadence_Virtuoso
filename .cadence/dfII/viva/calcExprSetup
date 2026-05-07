@@ -1,0 +1,5 @@
+artistResMgrCalcExprSetup("true" "plot" "E0" "abs(absi("/I3/D" ?result "dc"))")
+artistResMgrCalcExprSetup("true" "plot" "E1" "abs(absi("/I3/D" ?result "dc"))")
+artistResMgrCalcExprSetup("true" "plot" "Vg_vs_Id" "(abs("/I3/D") ?result "dc")")
+artistResMgrCalcExprSetup("true" "plot" "normal_Id" "("/I3/D" ?result "dc")")
+artistResMgrCalcExprSetup("true" "plot" "E2" "(abs("/I ?result "dc")")

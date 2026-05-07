@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+lab4/NAND2/schematic NAND2
+$endmodel
+$net
+$endnet
+$param
+$endparam

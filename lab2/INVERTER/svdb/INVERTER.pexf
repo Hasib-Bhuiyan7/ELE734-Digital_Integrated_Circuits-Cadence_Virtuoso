@@ -1,0 +1,5 @@
+# Automagically generated file: Please do not edit!
+pex_PexParam RUNDIR /home/student2/ahbhuiya/ele734-Labs/lab2/INVERTER
+pex_PexParam LAYOUT_PRIMARY INVERTER
+pex_PexParam TOOL xRC
+pex_PexParam CORNER_PDBS { {INVERTER "" INVERTER.pdb "" } } 

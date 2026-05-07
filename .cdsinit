@@ -1,0 +1,244 @@
+/*
+ *     	              Cadence Design Systems, IC Design Group
+ *
+ *  $Revision: #1 $
+ *  $Date: 2020/05/12 $
+ *
+ */
+
+/*
+ * Lines which are commented out would set parameters to their default
+ * values and therefore have no effect unless their value is changed.
+ * These lines are included as a template to allow you to set the 
+ * values.
+ */
+
+;
+; Schematic cellview to cellview defaults for creating a symbol with Artist
+; IL interpreted labels. The default is to not create an Artist symbol.
+;
+schSetEnv( "tsgTemplateType" "artist" )
+
+;||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+; General Analog Simulation Environment Setup...
+;||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+; The following is a list of simulation tool parameters which cannot be 
+; set by way of the Artist User Interface Options forms and therefore
+; can only be defined in the user's .cdsinit file.
+
+; If the value of numberOfSavedRuns is negative, no data will be copied or
+; deleted.
+; If the value is a non-negative integer, then that number of past runs
+; (It is assumed that the run names are non-negative integers, all others
+; are ignored) are saved.
+; (0 means don't copy the data at all, and delete all other
+; runs), otherwise all past runs are saved.
+;
+;	envSetVal( "asimenv.misc" "numberOfSavedRuns" 'int 0 )
+
+; By default, component CDF is not automatically updated when design 
+; variables are copied to the cellview.  To enable auto updating,
+; specify the following line in your .cdsinit file:
+;
+;       artEnableAutoDesignVarCdfUpdate()
+;
+; artDisableAutoDesignVarCdfUpdate() can be used to disable auto updating.
+; artGetAutoDesignVarCdfUpdate() will return t if auto updating is enabled,
+; or nil otherwise.
+
+; The following environment variable sets the default for plot display mode:
+;
+;     TOOL.PARTITION   NAME           TYPE    DEFAULT VALUE   CHOICES
+;     --------------   ----           ----    -------------   -------
+;     asimenv.plotting displayMode    cyclic  "auto"          "auto",
+;                                                             "strip",
+;                                                             "composite"
+;
+;     If displayMode is set to "composite", then the analog and the digital
+;     waveforms will be plotted together in the same strip.  If set to
+;     "strip", then the analog and digital waveforms are plotted in seperate
+;     strips. "auto" sets the plot display mode to composite if the simulator
+;     is analog-only, and strip if it is a mixed-signal type.
+
+; The following environment variable sets the default for the strip mode type:
+;
+;     TOOL.PARTITION   NAME           TYPE    DEFAULT VALUE CHOICES
+;     --------------   ----           ----    ------------- -------
+;     asimenv.plotting stripModeType  cyclic  "auto"        "auto",
+;                                                           "analogComposite",
+;                                                           "analogStrip"
+;
+;     If displayMode mentioned above has a value of "strip", then setting
+;     stripModeType to "analogComposite" will display all the analog
+;     waveforms in one strip. Setting it to "analogStrip" displays each
+;     analog waveform in a seperate strip. "auto" sets the strip mode type to
+;     "analogStrip" if the simulator is analog-only, and "analogComposite" if
+;     it is a mixed-signal type.
+
+;||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+; WAVEFORM WINDOW DEFAULTS
+;||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+;
+; This section explains how waveform window defaults can be overridden.
+;
+; Waveform window/subwindow options can be set using awvSetOptionValue().
+; E.g., if you want your subwindow to be in the strip mode when it is opened,
+; add the following line to .cdsinit:
+; 
+; awvSetOptionValue( "mode" "strip" )
+; 
+; Option names may be strings or symbols, e.g.,
+; 
+; awvSetOptionValue( 'mode "strip" )
+; 
+; is legal. The complete list of options is included below.
+; 
+; 
+; Boolean options:
+; ----------------
+; 
+;   Name		Purpose			Default
+;   ----		_______			-------
+; 
+;   cursorSuppressed	Tracking cursor		nil
+; 
+;   dateStamp		Date stamp
+;			(top right corner)	nil
+; 
+;   displayAxes		Display axes		t
+; 
+;   displayAxesBy125	Axis labels by 1-2-5	nil
+; 
+;   displayAxesLabel	Axes labels		t
+; 
+;   displayGrids	Grid lines		nil
+; 
+;   displayMajorTicks	Major tick marks	t
+; 
+;   displayMinorTicks	Minor tick marks	t
+; 
+;   updateStatus	Updatability		t
+; 
+;   xLog		Log axis (X)		nil
+; 
+; 
+; String options:
+; ---------------
+; 
+;   Name		Purpose			Default		Other choices
+;   ----		-------			-------		-------------
+; 
+;   cursorAction	Snap to waveform or
+;			actual data points	"line"		"data point"
+; 
+;   cursorPhase		Phase display (Smith)	"degree"	"radian"
+; 
+;   cursorValue		Value display (Smith)	"normalized impedance"
+;						      "normalized admittance"
+;						      "reflection coefficient"
+; 
+;   mode		Mode type		"composite"	"strip"
+;								"smith"
+; 
+;   smithModeType	Smith Mode type		"impedance"	"admittance"
+;								"polar"
+; 
+;   stripModeType	Strip Mode type		"analogStrip"
+;							"analogComposite"
+; 
+;   style		Plot style		"auto"		"bar"
+;								"scatterPlot"
+;								"joined"
+; 
+; 
+; Integer options:
+; ----------------
+; 
+;   Name		Purpose			Default		Other choices
+;   ----		-------			-------		-------------
+; 
+;   cursorPrecision	Number of digits
+;			of cursor output	4		Any integer
+;								greater than 2
+;								and less than
+;								16
+; 
+;   numIdentifier	Number of identifiers
+;			per waveform		6		Any positive
+;								integer or
+;								nil to get all
+; 
+; 
+; Hard copy options:
+; ------------------
+; 
+;   Name		Purpose			Default		Other choices
+;   ----		-------			-------		-------------
+; 
+;   hcCopyNum		Number of copies	1		Any positive
+;								integer
+;
+;   hcDisplay		Display name		"display"	Defined in
+;								the techfile
+;
+;   hcOrientation	Plot orientation	"automatic"	"portrait"
+;								"landscape"
+;
+;   hcOutputFile	Plot to file only	nil		Name of the
+;								output file
+;
+;   hcPaperSize		Plot paper size		Specified in .cdsplotinit
+;
+;   hcPlotterName	Plotter name		Specified in .cdsplotinit
+;
+;   hcTmpDir		Temporary scratch	"/usr/tmp"	Name of the
+;			space					temp directory
+; 
+; 
+; Note: Typing awvSetOptionValue( name value ) into the CIW will affect
+;	waveform windows/subwindows opened after that. To restore an option
+;	to its default value, type awvSetOptionDefault( name ).
+;; Calibre setup
+;; Load Calibre Skill Interface if environment var is set
+mgc_home=getShellEnvVar("MGC_HOME")
+
+if( mgc_home!=nil && isDir(mgc_home) && isReadable(mgc_home) then
+    ; Load calibre.skl for Cadence versions 4.4 and greater
+    load(strcat(mgc_home "/shared/pkgs/icv/tools/queryskl/calibre.skl"))
+else
+    ; MGC_HOME is not set
+    printf("Calibre Skill Interface not loaded.\n")
+)
+;; End of Calibre Skill Interface
+editor = "gedit"
+hiSetBindKey("Schematics" "Shift<Key>x" "schHiCheck(\"run\") sevNetlistAndRun(sevSession(hiGetCurrentWindow()))" )
+hiSetBindKey("Layout" "Shift<Btn1Down>" "mouseAddSelectPt" )
+; @(#)$Id: .cdsinit_home,v 1.12 2012/10/22 18:58:58 cshyamsu Exp $
+; Copyright (C) 2000 - 2012 Keysight Technologies, Inc
+if(getShellEnvVar("XPEDION") then
+	load(sprintf(nil "%s/aa/.cdsinit" getShellEnvVar("XPEDION")))
+else
+	printf(".cdsinit/.oceanrc: Environment variable XPEDION is not set!\n")
+)
+
+if(getShellEnvVar("HPEESOF_DIR") then
+	load(sprintf(nil "%s/idf/config/.cdsinit" getShellEnvVar("HPEESOF_DIR")))
+else
+	printf(".cdsinit/.oceanrc: Environment variable HPEESOF_DIR is not set!\n")
+)
+
+/*
+To make GoldenGate your default simulator, you can add the following line to
+your ~/.cdsenv file:
+
+asimenv.startup simulator string "GoldenGate"
+
+Alternatively, you can activate the envSetVal line by moving it outside this
+comment-block.
+
+envSetVal("asimenv.startup" "simulator" 'string "GoldenGate")
+*/
+envSetVal("GoldenGate.envOpts" "modelFiles" 'string "/CMC/kits/cmosp18.6.13a_ic6/models/spectre/icfspectre.init")
+envSetVal("GoldenGate.envOpts" "includePath" 'string "/CMC/kits/cmosp18.6.13a_ic6/models/spectre")

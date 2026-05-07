@@ -1,0 +1,21 @@
+//
+//  Rule file generated on Tue Oct 14 15:18:08 2025
+//  by Calibre Interactive v2024.3_37.19    Tue Sep 3 16:13:30 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "pmos.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "pmos"
+
+PEX NETLIST "pmos.pex.netlist" CALIBREVIEW LAYOUTNAMES
+
+MASK SVDB DIRECTORY "svdb" QUERY XRC
+
+LVS REPORT "pmos.lvs.report"
+
+DRC ICSTATION YES
+
+INCLUDE "/CMC/kits/cmosp18.6.13a_ic6/Calibre/rcx/rules"
