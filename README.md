@@ -254,7 +254,7 @@ while validating that the full-adder design remained reliable and physically acc
 
 ---
 
-# Key Technical Skills Demonstrated
+# Key Technical Skills Used:
 
 * CMOS transistor-level circuit design
 * Low-power digital integrated circuit analysis
@@ -273,7 +273,7 @@ while validating that the full-adder design remained reliable and physically acc
 
 ---
 
-# Conclusion
+# Conclusion:
 
 This project demonstrates a complete progression from fundamental MOSFET analysis to fully verified CMOS digital system implementation. Across all four labs, theoretical transistor behavior, schematic simulations, and extracted post-layout simulations were continuously compared to evaluate how practical layout effects influence circuit performance.
 
